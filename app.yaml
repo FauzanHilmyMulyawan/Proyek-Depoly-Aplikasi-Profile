@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: fauzan-main-blog/index.html
+  upload: fauzan-main-blog/index.html
+
+- url: /(.*)
+  static_files: fauzan-main-blog/\1
+  upload: fauzan-main-blog/(.*)
