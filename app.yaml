@@ -1,12 +1,8 @@
-runtime: python27
-api_version: 1
-threadsafe: true
+runtime: python37
 
 handlers:
-  - url: /
-    static_files: index.html
-    upload: index.html
-
-  - url: /styles
-    static_files: /style.css
-    upload: /style.css
+- url: /assets
+  static_dir: assets 
+- url: /.*
+  static_files: index.html
+  upload: index.html
